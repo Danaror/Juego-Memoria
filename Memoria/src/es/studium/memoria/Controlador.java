@@ -213,22 +213,22 @@ public class Controlador implements WindowListener, MouseListener, ActionListene
 			}else
 				vista.cambiarTurno(turno);
 				//Comparamos las cartas
-			/*try {
+			try {
 					vista.repaint();
 					Thread.sleep(700);
 					
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}*/
+				}
 			
 			
 			if (memoriaCarta[0]!=memoriaCarta[1])
 			{	//son diferentes
 				
 				//borramos las cartas
-				//this.vista.mostrarCarta(modelo.cartaAsignada(0),memoriaPosicion[1]);
-				//this.vista.mostrarCarta(modelo.cartaAsignada(0),memoriaPosicion[0]);
+				this.vista.mostrarCarta(modelo.cartaAsignada(0),memoriaPosicion[1]);
+				this.vista.mostrarCarta(modelo.cartaAsignada(0),memoriaPosicion[0]);
 				//quitamos los bloqueos
 				bloqueo[memoriaPosicion[0]]=0;
 				bloqueo[memoriaPosicion[1]]=0;
